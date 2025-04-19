@@ -1,28 +1,38 @@
 {
-    "name":"Example Listing",
-    "id":"com.vrchat.example-listing",
-    "url":"https://vrchat-community.github.io/template-package-listing/index.json",
-    "author":{
-        "email":"developer@vrchat.com",
-        "name":"VRChat",
-        "url":"https://hello.vrchat.com"
-    },
-    "description":"Example listing of VRChat packages",
-    "infoLink":{
-        "url":"http://github.com/vrchat-community/template-package-listing",
-        "text":"View on GitHub"
-    },
-    "bannerUrl":"banner.png",
-    "githubRepos":[
-        "haru-same3D/BlendShapeSearcher"
-    ],
-    "packages":[
-        {
-            "name":"com.vrchat.udonsharp",
-            "releases":[
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.7/com.vrchat.UdonSharp.zip",
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.6/com.vrchat.UdonSharp-1.1.6.zip"
-            ]
-        }
-    ]
+  // Listing 全体の名前
+  "name": "BlendShape Searcher Listing",
+
+  // Listing の固有 ID（なんでもいいですが、パッケージ名と混同しないように）
+  "id": "com.haru-same3D.blendshape-searcher-listing",
+
+  // ここが自動生成された index.json の URL
+  "url": "https://haru-same3D.github.io/BlendShapeSearcher-listing/index.json",
+
+  // あなたの情報
+  "author": {
+    "name": "haru-same3D",
+    "email": "your.email@example.com",        // 実在のメールでなくても大丈夫
+    "url": "https://github.com/haru-same3D"
+  },
+
+  // Listing の説明（英語のみ）
+  "description": "A listing of BlendShape Searcher Unity Editor extension",
+
+  // （オプション）Listing リポジトリ自体のリンク
+  "infoLink": {
+    "url": "https://github.com/haru-same3D/BlendShapeSearcher-listing",
+    "text": "View listing on GitHub"
+  },
+
+  // （オプション）バナー画像を docs/ 以下に置く場合
+  // "bannerUrl": "banner.png",
+
+  // GitHub 上にあるパッケージ本体リポジトリ
+  "githubRepos": [
+    "haru-same3D/BlendShapeSearcher"
+  ],
+
+  // 手動で ZIP/TGZ 形式も載せたい場合のみ使う。
+  // 今回は GitHub Releases から自動で拾わせるので空配列でOK。
+  "packages": []
 }
